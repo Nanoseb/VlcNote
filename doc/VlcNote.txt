@@ -1,0 +1,48 @@
+*VlcNote.txt* A short multi line description of your plugin
+
+===============================================================================
+CONTENTS                                                              *VlcNote*
+
+    1. Intro .................................................. |VlcNote-intro|
+    2. Requirements .................................... |VlcNote-requirements|
+    3. Usage .................................................. |VlcNote-usage|
+    4. Licence .............................................. |VlcNote-licence|
+===============================================================================
+1. Intro                                                        *VlcNote-intro*
+
+This plugin is meant to write notes along with a video playing
+
+2. Requirements                                          *VlcNote-requirements*
+
+It needs vlc for the video playback
+
+3. Usage                                                        *VlcNote-usage*
+
+Available functions:
+RunVlc: to run vlc with the appropriate parameters (telnet), if the current
+filename is also the name of a video file (with a different extension), this
+command will open this video
+One can also run vlc with the following arguments:
+`    vlc -I telnet --telnet-password passwordVLC --telnet-port 4212 file.mp4`
+
+PauseVlc: to pause and play the video 
+WriteTimestampVlc: write the current timestamp at the begining of the line
+GotoTimestampVlc: play the video at the line timestamp
+
+4. Licence                                                    *VlcNote-licence*
+
+           DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                   Version 2, December 2004
+
+Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
+
+Everyone is permitted to copy and distribute verbatim or modified
+copies of this license document, and changing it is allowed as long
+as the name is changed.
+
+           DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+ 0. You just DO WHAT THE FUCK YOU WANT TO.
+
+vim:ft=help
