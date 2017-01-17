@@ -52,7 +52,7 @@ videoext = ("mp4", "mkv", "avi", "webm", "flv")
 
 args = ["vlc", "--extraintf", "telnet", "--telnet-port", "4212", "--telnet-password", "passwordVLC"]
 for file in glob.glob(path+"*"):
-    if file.endswith(videoext):
+    if file.lower().endswith(videoext):
         args.append(file)
         break
 
