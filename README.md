@@ -25,7 +25,7 @@ Available functions:
 filename is also the name of a video file (with a different extension), this
 command will open this video
 One can also run vlc with the following arguments:
-`    vlc -I telnet --telnet-password passwordVLC --telnet-port 4212 file.mp4`
+`    vlc --extraintf telnet --telnet-password passwordVLC --telnet-port 4212 file.mp4`
 * PauseVlc: to pause and play the video 
 * WriteTimestampVlc: write the current timestamp at the begining of the line
 * GotoTimestampVlc: play the video at the line timestamp
