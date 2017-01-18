@@ -1,6 +1,6 @@
 # VlcNote
 
-This plugin is meant to write notes along with a video playing
+This plugin is meant for writing notes along with a video playing
 
 ## Installation
 
@@ -20,14 +20,15 @@ Use your plugin manager of choice.
 
 ## Available functions
 
-Available functions:
-* RunVlc: to run vlc with the appropriate parameters (telnet), if the current
+* `RunVlc`: to run vlc with the appropriate parameters (telnet), if the current
 filename is also the name of a video file (with a different extension), this
-command will open this video
+command will open this video.
 One can also run vlc with the following arguments:
+
 `    vlc --extraintf telnet --telnet-password passwordVLC --telnet-port 4212 file.mp4`
-* PauseVlc: to pause and play the video 
-* WriteTimestampVlc: write the current timestamp at the begining of the line
-* GotoTimestampVlc: play the video at the line timestamp
+
+* `PauseVlc`: to pause and play the video 
+* `WriteTimestampVlc`: write the current timestamp at the begining of the line
+* `GotoTimestampVlc`: play the video at the line timestamp
 
 
