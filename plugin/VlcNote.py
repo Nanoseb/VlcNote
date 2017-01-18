@@ -49,6 +49,7 @@ class VlcNote:
             timestamp_format = int2time(timestamp)
         except:
             return
+        vim.current.line = re.sub("^..:..:.. -- ", "", vim.current.line)
         vim.current.line = timestamp_format + vim.current.line
 
     def goto_timestamp(self):
@@ -57,8 +58,7 @@ class VlcNote:
             timestamp = time2int(timestamp_format)
         except:
             return
-        self.telnet.write(b"goto 1")
-        self.telnet.write(b"\n") 
+        self.telnet.write(b"seek -86400\n")
         time.sleep(0.3)
 
         self.telnet.write(b"seek ")
@@ -66,5 +66,5 @@ class VlcNote:
         self.telnet.write(b'\n')
         
     def logout(self):
-        time.sleep(0.3)
+        time.sleep(0.1)
         self.telnet.write(b"logout\n")
